@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 35, 3);
+    color: white;
+}
+header{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+header button{
+    padding: 5px 10px;
+    background-color:rgb(151, 119, 79);
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+}
+.content .card{
+    position: relative;
+    width: 200px;
+    height: 270PX;
+    padding: 5px;
+    overflow: hidden;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.5);
+}
+.card:hover .info{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background-color: black;
+    opacity: .8;
+}
+
+.card .info{
+    width: 200px;
+    background-color: rgb(151, 119, 79);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+.card .info:hover{
+    background-color: rgb(86, 88, 91);
+    color: white;
+}
+
+.info .each_info span:nth-child(1){
+    font-size: 1rem;
+    font-weight: 600;
+}
